@@ -27,5 +27,5 @@ Applications are numourous. A few are described in this paper [A survey of appli
 - Update the Q-value for the tuple (location, action) by adding the temporal difference
 - repeat over multiple iterations (1000).
 
-3) Use the Q-Value matrix now available to determine the optimal route from a starting location to a target location. This is achieved by allowting a big reward to the target location, determining the matrix of Q-values through iterations of the agent (exploration). Then we just follow the maximum value of the possible actions at each location iteratively. The action with the highest value indicates the transition to next location, and so on and so forth, until the optimal route is determined step-by-step.
+3) Use the Q-Value matrix now available to determine the optimal route from a starting location to a target location. This is achieved by first, awarding a big reward to the target location, and second, calculating the matrix of Q-values through the iterations of the agent (exploration). The final step requires to follow the maximum value of the possible actions at each location iteratively. The action with the highest value indicates the transition to next location, and so on and so forth, until the optimal route is determined step-by-step.
 
